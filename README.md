@@ -76,7 +76,9 @@ ng–app = “name”
  - 自定义Directive
  - 内置filter
  - 自定义filter
+ 
 #### 1 内置Directive
+
 最常用的内置Directive有：（更多查看官网）
 
 ```
