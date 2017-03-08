@@ -76,7 +76,7 @@ ng–app = “name”
  - 自定义Directive
  - 内置filter
  - 自定义filter
- 
+
 #### 1 内置Directive
 
 最常用的内置Directive有：（更多查看官网）
@@ -88,7 +88,7 @@ ng–app = “name”
 4、ng-class
 5、ng-click
 ```
-具体使用请查看示例代码
+[具体使用请查看示例代码](https://github.com/taoziUncle/angular1-demo/tree/master/demo/demo)
 #### 2 自定义Directive
 
 ```
@@ -101,7 +101,7 @@ ng–app = “name”
 2、template
 3、templateUrl
 ```
-具体使用请查看示例代码
+[具体使用请查看示例代码](https://github.com/taoziUncle/angular1-demo/blob/master/demo/demo/5-customerDirective.html)
 #### 3 内置filter
 
 ```
@@ -114,7 +114,7 @@ ng–app = “name”
 7、json
 8、limitTo
 ```
-具体使用请查看示例代码
+[具体使用请查看示例代码](https://github.com/taoziUncle/angular1-demo/blob/master/demo/demo/7-filter.html)
 
 #### 4 自定义filter
 
@@ -132,8 +132,11 @@ return function (text) {
 ```
 具体使用请查看示例代码
 ### 三、路由
-请查看示例代码
+[请查看示例代码](https://github.com/taoziUncle/angular1-demo/tree/master/demo/demo)
 
 ### 四、angular1 application
-请查看示例代码
+[请查看示例代码](https://github.com/taoziUncle/angular1-demo/tree/master/demo/backSystem/angular)
+
+
+
 
