@@ -1,0 +1,19 @@
+angular.module('myApp',[])
+.controller('MyCtrl',function($scope){
+    var vm=$scope.vm={};
+        vm.arr=['geek','kgc','lily','rose'];
+        vm.arr1=['a','b','c','d','a'];
+        vm.usersInfo=[
+            {id:1,username:'kgc1',age:12,'email':'1kgc@qq.com'},
+            {id:2,username:'kgc2',age:22,'email':'2kgc@qq.com'},
+            {id:3,username:'kgc3',age:32,'email':'3kgc@qq.com'},
+            {id:4,username:'kgc4',age:42,'email':'4kgc@qq.com'},
+            {id:5,username:'kgc5',age:52,'email':'5kgc@qq.com'},
+            {id:6,username:'kgc6',age:62,'email':'6kgc@qq.com'},
+            {id:7,username:'kgc7',age:72,'email':'7kgc@qq.com'},
+            {id:8,username:'kgc8',age:82,'email':'8kgc@qq.com'}
+        ];
+        //遍历对象
+        vm.proInfo={id:1,proName:'iphone7',price:8888};
+        vm.arr2=['a','b','c'];
+    });

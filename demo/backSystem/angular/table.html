@@ -1,0 +1,47 @@
+﻿<div id="page-wrapper" ng-controller="tableDemo">
+		  <div class="header"> 
+                        <h1 class="page-header">
+                            Tables Page
+                        </h1>
+		</div>
+		
+            <div id="page-inner"> 
+               
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Advanced Tables -->
+                    <div class="card">
+                        <div class="card-action">
+                             Advanced Tables
+                        </div>
+                        <div class="card-content">
+                            <div class="table-responsive">
+                                <p><input type="text" placeholder="请输入关键字" ng-model="keyword"/></p>
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <tr>
+                                        <td>编号</td>
+                                        <td ng-click="col='username'; des=!des">用户名</td>
+                                        <td ng-click="col='age'; des=!des">年龄</td>
+                                        <td ng-click="col='salary'; des=!des">薪水</td>
+                                    </tr>
+                                    <tr ng-repeat="user in usersInfo|filter:keyword|orderBy:col:des">
+                                        <td>{{user.id}}</td>
+                                        <td>{{user.username|lowercase}}</td>
+                                        <td>{{user.age}}</td>
+                                        <td>{{user.salary|currency:'RMB'}}</td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!--End Advanced Tables -->
+                </div>
+            </div>
+                <!-- /. ROW  -->
+
+         
+    </div>
+             <!-- /. PAGE INNER  -->
+            </div>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .pink{
+            background-color: pink;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .even{
+            background-color: red;
+        }
+        .odd{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+<div ng-controller="MyCtrl">
+    <button ng-click="bgColor='pink'">粉色</button>
+    <button ng-click="bgColor='blue'">蓝色</button>
+<h1 ng-class="bgColor">hello Geek</h1>
+    <ul>
+        <li ng-repeat="v in arr" ng-class-even="'even'" ng-class-odd="'odd'">{{v}}</li>
+    </ul>
+
+    <hr/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script src="../js/angular.min.js"></script>
+<script src="3.js"></script>
+</body>
+</html>

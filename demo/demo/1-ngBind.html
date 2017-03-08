@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h2>ng-list</h2>
+<p>
+    <input type="text" ng-model="res" ng-list/>
+</p>
+<p ng-bind="res"></p>
+<p><input type="text" ng-model="res1" ng-list="-"/></p>
+<p>{{res1}}</p>
+<script src="../js/angular.min.js"></script>
+<script>
+    angular.module('myApp',[]);
+</script>
+</body>
+</html>

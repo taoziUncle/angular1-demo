@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div ng-controller="MyCtrl">
+    <h1>Number过滤器</h1>
+    <ul>
+        <li>{{123}}</li>
+        <li>{{123.456}}</li>
+        <li>{{123.456789|number}}</li>
+        <li>{{123.456789|number:2}}</li>
+        <li>{{123456789|number}}</li>
+    </ul>
+    <h1>currency格式化数字转换为货币的形式</h1>
+    <ul>
+        <li>{{1234|currency}}</li>
+        <li>{{1234|currency:'@'}}</li>
+        <li>{{1234.6789|currency:'RMB'}}</li>
+    </ul>
+    <h1>date日期过滤器</h1>
+    <ul>
+        <li>{{today}}</li>
+        <li>{{today|date:'medium'}}</li>
+        <li>{{today|date:'yyyy'}}</li>
+        <li>{{today|date:'yy'}}</li>
+        <li>{{today|date:'y'}}</li>
+        <li>英文月份：{{today|date:'MMMM'}}</li>
+        <li>英文月份简写：{{today|date:'MMM'}}</li>
+        <li>数字月份：{{today|date:'MM'}}</li>
+        <li>一年中第几个月份：{{today|date:'M'}}</li>
+        <li>{{today|date:'yyyy年MM月dd HH:mm:ss'}}</li>
+        <li>{{today|date:'yyyy/MM/dd HH:mm:ss'}}</li>
+        <h1>lowercase|uppercase字符串大小写转换</h1>
+        <ul>
+            <li>{{'kgc'|uppercase}}</li>
+            <li>{{'GEEK'|lowercase}}</li>
+        </ul>
+        <h1>filter过滤器</h1>
+        <ul>
+            <li>{{users}}</li>
+            <li>{{users|filter:'g'}}</li>
+            <li>{{users|filter:'k':false}}</li>
+            <li>{{users|filter:'Geek':true}}</li>
+            <li>{{users|filter:isCapitalized}}</li>
+        </ul>
+        <h1>json</h1>
+        <ul>
+            <li><pre>{{test|json}}</pre></li>
+            <li><pre>{{test}}</pre></li>
+        </ul>
+        <h1>limitTo宽度限制</h1>
+        <ul>
+            <li>{{test1}}</li>
+            <li>{{test1|limitTo:5}}</li>
+            <li>{{test1|limitTo:5}}...</li>
+            <li>{{users|limitTo:2}}</li>
+        </ul>
+        <h1>orderBy排序</h1>
+        <table border="1" width="80%" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>编号</td>
+                <td>名称</td>
+                <td>年龄</td>
+            </tr>
+            <tr ng-repeat="user in usersInfo|orderBy:'age':true">
+                <td>{{user.id}}</td>
+                <td>{{user.username}}</td>
+                <td>{{user.age}}</td>
+            </tr>
+        </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </ul>
+</div>
+<script src="../js/angular.min.js"></script>
+<script src="4.js"></script>
+</body>
+</html>

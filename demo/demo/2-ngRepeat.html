@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div ng-controller="MyCtrl">
+    <ul>
+        <li ng-repeat="user in vm.arr">用户名：{{user}}</li>
+    </ul>
+    <hr/>
+    <ul>
+        <li ng-repeat="(key,val) in vm.arr">{{key}}----{{val}}</li>
+    </ul>
+    <hr/>
+    <ul>
+        <li ng-repeat="v in vm.arr1 track by $index">{{v}}--{{$index}}</li>
+    </ul>
+    <hr/>
+    <table border="1" cellspacing="0" cellpadding="0" width="80%" bgcolor="#7fffd4">
+        <tr>
+            <td>编号</td>
+            <td>用户名</td>
+            <td>年龄</td>
+            <td>邮箱</td>
+        </tr>
+        <tr ng-repeat="userInfo in vm.usersInfo">
+            <td>{{userInfo.id}}</td>
+            <td>{{userInfo.username}}</td>
+            <td>{{userInfo.age}}</td>
+            <td>{{userInfo.email}}</td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script src="../js/angular.min.js"></script>
+<script src="2.js"></script>
+</body>
+</html>

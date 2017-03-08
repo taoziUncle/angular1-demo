@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div ng-controller="MyCtrl">
+<h1>What To Do?</h1>
+    <p><input type="text" ng-model="task"/></p>
+    <p><button ng-click="addTask()">ADD Task</button></p>
+    <p>Todo List</p>
+    <ul type="none">
+        <li ng-repeat="item in tasks track by $index">{{$index+1}}.{{item}}-------<a ng-click="tasks.splice($index,1)" style="color:red;">&times;</a></li>
+    </ul>
+    <!--Error: [ngRepeat:dupes]这个出错提示具体到题主的情况，意思是指数组中有2个以上的相同数字。-->
+</div>
+</div>
+<script src="../js/angular.min.js"></script>
+<script src="todolist.js"></script>
+</body>
+</html>
